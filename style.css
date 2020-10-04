@@ -1,5 +1,6 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
+html { box-sizing: border-box; 
+}
 *, ::after, ::before { box-sizing: inherit; }
 
 /*
@@ -13,7 +14,81 @@ html { box-sizing: border-box; }
  twitter    #1da1f2
 */
 
-
 body {
-    background-color: #bdc3c7;
+        max-width: 250px;
+        background-color: #bdc3c7;
+    }
+
+.profil {
+        background-color: #31363b;
+        box-shadow: #31363b 4px 6px 20px;
+    }
+
+.foto {
+    max-width: 100%;
+}
+
+.logo {
+    position: relative;
+    left: 175px;
+    top: -30px;
+    border-radius: 50%;
+    background-color: #b92e81;
+}
+
+.obsah {
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #bdc3c7;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.odkazy {
+    padding: 0px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    border-top: 1px solid #3f464d;
+}
+
+li.portfolio a, li.facebook a, li.twitter a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+li.facebook, li.twitter {
+    display: inline-block;
+    width: 123px;
+}
+
+.portfolio:hover {
+    background-color: #e74c3c;
+}
+
+.facebook:hover {
+    background-color: #3b5998;
+}
+
+.twitter:hover {
+    background-color: #1da1f2;
 }
